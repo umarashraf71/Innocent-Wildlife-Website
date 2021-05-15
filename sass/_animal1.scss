@@ -1,0 +1,64 @@
+.animal1 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  // min-height: 500px;
+
+  .contentBx {
+    background-color: $red-color;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+
+    .heading {
+      color: $black-color;
+      font-size: 23px;
+      margin-bottom: 15px;
+      font-weight: 600;
+      word-spacing: 1px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .text {
+
+      color: $white-color;
+    }
+  }
+
+  .imgBx {
+    width: 60%;
+    background: linear-gradient(to right, rgba($red-color,0.7), rgba(0,0,0,0.5)) ,url("../img/animal1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-color: $black-color;
+    background-attachment: fixed;
+  }
+}
+
+
+
+
+
+
+// @media screen and (min-width: 1365px) {
+//   .animal1 {
+//     .contentBx {
+//       padding: 100px;
+//       width: 40%;
+//     }
+
+//     .imgBx {
+//       width: 60%;
+//       background: url("../img/animal1.jpg");
+//       background-position: -50;
+//       background-size: cover;
+//       background-repeat: no-repeat;
+//       clip-path: circle(800px at 100% 0);
+//       z-index: 1;
+//     }
+//   }
+// }

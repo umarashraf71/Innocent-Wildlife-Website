@@ -1,0 +1,47 @@
+.client {
+  background: $black-color;
+  width: 100%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+
+    .heading {
+
+        text-align: center;
+        font-size: 28px;
+        font-weight: 600;
+        word-spacing: 3px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $red-color;
+        margin-bottom: 20px;
+    }
+
+    .text {
+
+        text-align: center;
+        z-index: 1;
+        font-size: 16px;
+        font-weight: 300;
+        color: $white-color;
+    }
+  
+  .imgBx {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+
+    img {
+
+        max-width: 200px;
+        margin: 20px;
+        cursor: pointer;
+
+    }
+  }
+
+}

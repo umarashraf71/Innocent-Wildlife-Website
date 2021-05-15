@@ -1,0 +1,30 @@
+@import "./config", "./banner", "./about", "./animal1", "./services", "./tech",
+  "./client", "./testimonials", "./contact", "./footer", "./responsive";
+
+html {
+  scroll-behavior: smooth;
+}
+
+// section {
+//   overflow-x: hidden;
+// }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $red-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $black-color;
+}

@@ -1,0 +1,128 @@
+.contact {
+  background: $black-color;
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+
+  .heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    word-spacing: 3px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: $red-color;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    text-align: center;
+    z-index: 1;
+    font-size: 16px;
+    font-weight: 300;
+    color: $white-color;
+  }
+}
+
+
+.contactform {
+    position: relative;
+    width: 100%;
+    display: flex;
+    background-color: $red-color;
+    min-height: 550px;
+  
+    .contentBx {
+      padding: 0px 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+
+      .form {
+
+        margin-top: 80px;
+        margin-bottom: 40px;
+
+        .inputBx{
+
+            margin-bottom: 30px;
+
+            input {
+
+                width: 100%;
+                background: transparent;
+                box-shadow: none;
+                border: none;
+                outline: none;
+                padding: 10px 0;
+                font-size: 17px;
+                font-weight: 300;
+                color: $white-color;
+                border-bottom: 2px solid $white-color;
+
+                &::placeholder {
+
+                    color: $white-color;
+                }
+            }
+
+            textarea {
+
+                width: 100%;
+                background: transparent;
+                box-shadow: none;
+                border: none;
+                outline: none;
+                padding: 10px 0;
+                font-size: 17px;
+                font-weight: 300;
+                min-height: 100px;
+                color: $white-color;
+                resize: none;
+                border-bottom: 2px solid $white-color;
+
+                &::placeholder {
+
+                    color: $white-color;
+                }
+            }
+                input[type="submit"] {
+
+                    width: 150px;
+                    background-color: $black-color;
+                    color: $white-color;
+                    font-weight: 400px;
+                    margin-top: 20px;
+                    border-bottom: none;
+                }
+        }
+      }
+  
+    //   .heading {
+    //     color: $black-color;
+    //     font-size: 23px;
+    //     margin-bottom: 15px;
+    //     font-weight: 600;
+    //     word-spacing: 1px;
+    //     letter-spacing: 0.5px;
+    //     text-transform: uppercase;
+    //   }
+  
+    //   .text {
+  
+    //     color: $white-color;
+    //   }
+    }
+  
+    .imgBx {
+      width: 50%;
+      background: linear-gradient(to right, rgba($red-color,0.7), rgba(0,0,0,0.5)) ,url("../img/animal2.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right ;
+      background-color: $black-color;
+      background-attachment: fixed;
+    }
+  }

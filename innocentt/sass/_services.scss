@@ -1,0 +1,67 @@
+.services {
+
+    background: $black-color;
+    padding: 100px;
+    text-align: center;
+
+    .heading {
+
+        text-align: center;
+        font-size: 28px;
+        font-weight: 600;
+        word-spacing: 3px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $red-color;
+        margin-bottom: 20px;
+    }
+
+    .text {
+
+        text-align: center;
+        z-index: 1;
+        font-size: 16px;
+        font-weight: 300;
+        color: $white-color;
+    }
+
+    .container {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 60px;
+
+        .serviceBx {
+
+            position: relative;
+            background: $black-color;
+            width: 350px;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 4px solid $white-color;
+
+            img {
+
+                width: 100px;
+                // filter: invert(11%) sepia(95%) saturate(3955%) hue-rotate(355deg) brightness(95%) contrast(105%);
+                filter: invert(1);
+            }
+
+            h2 {
+                font-weight: 600;
+                font-size: 19px;
+                letter-spacing: 0.5px;
+                word-spacing: 1px;
+                margin-top: 5px;
+                color: $white-color;
+            }
+
+        }
+    }
+
+}

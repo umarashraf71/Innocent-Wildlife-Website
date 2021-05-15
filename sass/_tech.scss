@@ -1,0 +1,41 @@
+.technology {
+
+    background: $red-color;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 290px ;
+    margin-top: -290px;
+
+    .contentBx {
+        max-width: 700px;
+
+        .heading{
+
+            color: $black-color;
+            font-size: 23px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .text {
+        color: $white-color;
+        }
+    }
+
+    .imgBx {
+
+        max-width: 250px;
+
+        img {
+
+            max-width: 100%;
+        }
+    }
+
+}

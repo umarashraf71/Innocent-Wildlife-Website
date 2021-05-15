@@ -1,0 +1,422 @@
+/////////////////////////// medium large screen //////////////////////////////
+@include media-m-lg {
+  //services section
+  .services {
+    .container {
+      justify-content: center;
+      margin-top: 20px;
+
+      .serviceBx {
+        margin: 20px;
+      }
+    }
+  }
+
+  //our clients section
+  .client {
+    .imgBx {
+      justify-content: center;
+    }
+  }
+
+  //testimonial section
+  .testimonials {
+    padding: 100px 50px;
+  }
+}
+
+/////////////////////////// large screen //////////////////////////////
+@include media-lg {
+  //banner section
+  .banner {
+    padding: 50px;
+
+    header {
+      padding: 25px 45px;
+
+      .menuToggle {
+        display: block;
+      }
+      .navigation {
+        display: none;
+      }
+
+      .navActive {
+        display: flex;
+        width: 100%;
+        height: calc(100% - 85px);
+        position: fixed;
+        top: 85px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: $black-color;
+        transition: background 0.5s ease-in-out;
+
+        li {
+          margin-left: 0;
+          margin: 10px 0px;
+
+          a {
+            color: $white-color;
+            font-weight: 400;
+            font-size: 21px;
+          }
+        }
+      }
+    }
+
+    .content {
+      h2 {
+        font-size: 42px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  //about section
+  .about {
+    padding: 150px 0px 110px 0px;
+
+    .contentBx {
+      p {
+        padding: 0px 50px;
+      }
+
+      .circle {
+        top: -70px;
+        right: 110px;
+      }
+    }
+  }
+
+  //animal section
+  .animal1 {
+    flex-direction: column;
+
+    .contentBx {
+      width: 100%;
+      padding: 100px 50px;
+
+      .heading {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 600;
+        word-spacing: 3px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $black-color;
+        margin-bottom: 20px;
+      }
+
+      .text {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        color: $white-color;
+      }
+    }
+
+    .imgBx {
+      width: 100%;
+      height: 350px;
+    }
+  }
+
+  //services section
+  .services {
+    padding: 100px 50px;
+
+    .container {
+      justify-content: center;
+      margin-top: 20px;
+
+      .serviceBx {
+        margin: 20px;
+      }
+    }
+  }
+
+  .technology {
+    padding: 100px 50px;
+    padding-top: 290px;
+    justify-content: center;
+    flex-direction: column;
+
+    .contentBx {
+      max-width: 100%;
+
+      .heading {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 600;
+        word-spacing: 3px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $black-color;
+        margin-bottom: 20px;
+      }
+
+      .text {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        color: $white-color;
+      }
+    }
+
+    .imgBx {
+      margin-top: 40px;
+      max-width: 250px;
+    }
+  }
+
+  //our clients section
+  .client {
+    padding: 100px 50px;
+
+    .imgBx {
+      justify-content: center;
+    }
+  }
+
+  //testimonial section
+  .testimonials {
+    padding: 100px 50px;
+
+    .container {
+      .contentBx {
+        padding: 45px 35px;
+      }
+    }
+  }
+
+  //contact us section
+
+  .contact {
+    padding: 100px 50px;
+  }
+
+  //footer section
+
+  .footer {
+    padding: 30px 30px;
+  }
+}
+
+/////////////////////////// medium screen //////////////////////////////
+@include media-md {
+  .header {
+    header {
+      .menuToggle {
+        background-size: 48px;
+        margin-top: 1px;
+      }
+
+      // .active {
+
+      //     background-size: 32px;
+      //     margin-top: 1px;
+      // }
+    }
+
+    // .sticky {
+
+    // padding: 15px 40px 15px 45px !important;
+    // }
+  }
+
+  .contactform {
+    flex-direction: column-reverse;
+
+    .contentBx {
+      padding: 0px 50px;
+      width: 100%;
+    }
+    .imgBx {
+      width: 100%;
+      height: 350px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+/////////////////////////// small screen //////////////////////////////
+@include media-sm {
+  //about section
+  .about {
+    .contentBx {
+      &:before {
+        top: 30px;
+        transform: skewY(12deg);
+      }
+      &:after {
+        top: -110px;
+        transform: skewY(-8deg);
+      }
+
+      .circle {
+        top: -50px;
+        right: 110px;
+      }
+    }
+  }
+}
+
+/////////////////////////// extra small screen //////////////////////////////
+@include media-xs {
+  .banner {
+    .content {
+      margin-top: -30px;
+    }
+  }
+
+  //about section
+  .about {
+    padding: 220px 0px 110px 0px;
+
+    .contentBx {
+      &:before {
+        top: -75px;
+        height: 280px;
+        transform: skewY(25deg);
+      }
+      &:after {
+        top: -75px;
+        transform: skewY(-25deg);
+      }
+
+      .heading {
+        top: 130px;
+        font-size: 26px;
+        word-spacing: 1px;
+        letter-spacing: 0.2px;
+      }
+
+      .circle {
+        top: 50px;
+        right: 72px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+
+  //animal section
+  .animal1 {
+    .contentBx {
+      .heading {
+        font-size: 26px;
+        word-spacing: 1px;
+        letter-spacing: 0.2px;
+      }
+
+      .text {
+        font-size: 15px;
+      }
+    }
+  }
+
+  //services section
+  .services {
+    .heading {
+      font-size: 26px;
+      word-spacing: 1px;
+      letter-spacing: 0.2px;
+    }
+
+    .text {
+      font-size: 15px;
+    }
+
+    .container {
+      .serviceBx {
+        height: 300px;
+        border: 3px solid $white-color;
+      }
+    }
+  }
+
+  //technology section
+  .technology {
+    margin-top: -270px;
+
+    .contentBx {
+      margin-top: -80px;
+
+      .heading {
+        font-size: 26px;
+        word-spacing: 1px;
+        letter-spacing: 0.2px;
+      }
+
+      .text {
+        font-size: 15px;
+      }
+    }
+  }
+
+  //our client section
+  .client {
+    .heading {
+      font-size: 26px;
+      word-spacing: 1px;
+      letter-spacing: 0.2px;
+    }
+
+    .text {
+      font-size: 15px;
+    }
+  }
+
+  //testimonial section
+  .testimonials {
+    padding: 100px 30px;
+
+    .heading {
+      font-size: 26px;
+      word-spacing: 1px;
+      letter-spacing: 0.2px;
+    }
+
+    .container {
+      .contentBx {
+        padding: 35px 35px;
+        border: 3px solid $black-color;
+
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  //contact us section
+
+  .contact {
+    .heading {
+      font-size: 26px;
+      word-spacing: 1px;
+      letter-spacing: 0.2px;
+    }
+
+    .text {
+      font-size: 15px;
+    }
+  }
+
+  //contactform
+  .contactform {
+    .imgBx {
+      width: 100%;
+      height: 350px;
+    }
+  }
+}
